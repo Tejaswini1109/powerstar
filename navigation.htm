@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="HOME">
+        <pre>
+
+
+   </pre>
+
+        <ul id="ul">
+            <li class="ii"> RESTAURANTELY </li>
+            <pre></pre>
+            <li> <a href="#HOME" class="d"> HOME </a></li>
+            <li> <a href="#ABOUT" class="c">ABOUT</a></li>
+            <li><a href="#MENU" class="c">INFO</a></li>
+            <li><a href="#SPECIALS" class="c">SPECIALS</a></li>
+            <li><a href="#EVENTS" class="c"> EVENTS</a></li>
+            <li><a href="#CHEFS" class="c">CHEFS</a></li>
+            <li><a href="#GALLERY" class="c">GALLERY</a></li>
+            <li><a href="#DROPDOWN " class="c"> DROPDOWN</a></li>
+            <li><a href="CONTACT" class="c">CONTACT</a></li>
+            <li><a href="#BOOKATABLE" class="e"> <input type="button" value="BOOK A TABLE"></a></li>
+        </ul>
+        <div id="gif">
+            <section id="one">
+                <p class="f11"> WELCOME TO RESTAURANTELY</p> <br>
+                <p class="f1">DELIVARING GREAT FOOD FOR MORE THAN 18 YEARS </p>
+
+                <input type="button" value="OUR MENU" class="b" id="b">
+                <input type="button" value="BOOK A TABLE" class="b" id="b">
+
+            </section>
+            <pre> <section id="two">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALUAAACICAMAAACWaVroAAAAaVBMVEXr8vX3Rj7r9fjq+Pv3RDz3Pzbq///vurr3PTT3QTn3Ny33TUbq+/70fHnwsLD4Kx71ZmDt293s4+Xuxsbuz9DxpaT0dnL2U0z4MCTr7fDylpX2XFft1tjxq6v4IhHvv7/1a2bzkI70gn97gZFsAAADGUlEQVR4nO2a626jMBCF47FJbHMLTkIw5AJ5/4fs0Ha1Gy4plbY1I80nRYoIP04Oh/H4stkwDMMwDMMwDMMwDMMwDMMwDMMwZAGZbD9IJIQWswiAjS92dbpvmmaf1rvC95fWjYTLNTW3ymrTo211M+n1AjK0sBdIeW9jq5UQCiVH+Om/ahu3d7lW3dJnKkedKFOfm7Ysy7Y56/5PKJOrzK9RN2x3e2uEinKbZofCeb/x3hWHLLV5pISx+912dfmW7lGhZhuXBww3fL6A/Re5OZSxRd3Vw63M7uR4tkJo3V0mAizlpdNaCHs+JgG0zQKZiTAEpZspcgCuxPhEJltRSOQpV+jkPZnXBMkdn4bKT6sJiTxhOmzzRWqla/rb1iI7OeVCVPWXIyBAXQmRn1aRbXnAAlF1CxoOkF2FZeawArfhEhth62VKZG2FiS/hX8mk0cKmCxskgNQK3QTPSHKtRNS4pe6BayJRXQPLhiJWSh2XJ1Ue8f64CJsR2VkM9dC6V5oSjLbtgr6Q4G7CnAciwRevdMPZiNviSP0E297qbGCcf8Spm0+uzHqztz+s7AXgYmVa/3xR7qzRKpu327dGxQHNlhlWvWFBkLsIJzD5o5izO7li9Rs+oF/Ep1rkfuDau2rsWkU2M1yCz5VO/eRvv4EzSpfDhH6qFqoqL9N2b0utjPt5edPIQy6q0aP+oxr7u3g32bvKrBJ5sG4k6axSowHjr2pM936qfYVCKduFGh+3e2Pa0ZP+R3U/6com7HatMftQtQ9ipR+jq0+q36dlY7sfWsWBSh+4SOlxi/qsuk/3yG5ZaxUFqthQoOrxzGSoGu0eLikkJ1QdqIOSR1Q9Hi1GqtFue3+SiKOTir7RKP5P3lXfl6jGDuvJWXln1d+DZkJovo00Kx/NUYboiE6ze6LZqdKcFRCdgdGc7dJcWaC5ikN0xYzm6iTRlWCaq+5EdziI7ibR3LkjuktKdEea6O4/0ZMWRE+1ED1BRPS01obmybgeiqcQeyie+OyheLr2A3onmRmGYRiGYRiGYRiGYRiGYRiGYZhJ3gB2MTw1HmjLcwAAAABJRU5ErkJggg==" alt="">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+        </div>
+        </section>
+    </div>
+
+    <div id="ABOUT">
+        <pre>
+<div id="ab2">
+<section id="two1">
+
+    <b class="sec1">Voluptatem dignissimos provident quasi
+         corporis voluptates sit assumenda.</b>
+
+<i><b class="sec11">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</b></i>
+<b class="sec111">
+    <ol>
+<li> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+<li> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+<li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+ irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro 
+ dolore eu fugiat nulla pariatur.</li></ol></b>
+<b class="sec111">
+Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+ dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+ nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+ culpa qui officia deserunt mollit anim id est laborum
+
+</b>
+
+
+
+
+</section>
+
+<section id="two2">
+<pre>
+
+
+
+
+
+
+
+
+
+</pre>
+
+        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/about.jpg" height="400px"
+            width="520px" class="sec2">
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </pre>
+    </div>
+    <div id="MENU">
+        <pre> <div>
+        <div class="a1">
+         <b class="wh"> WHY US____________________</b>
+
+        <b class="hw">WHY CHOOSE OUR RESTOURENT</b>
+            </div>
+            <div id="aa">
+    <section class="ab">
+<b class="hw">01</b> <marquee behavior="" direction="top"></marquee>
+<b class="mm1">loream ispum</b>
+<b class="mm2">Ulamco laboris nisi ut aliquip ex ea 
+commodo consequat. Et consectetur 
+ducimus vero placeat </b> 
+  </section>
+ <section class="ac">
+<b class="hw">02</b>
+<b class="mm1">Repellat Nihil</b>
+<b class="mm2">dolorem est fugiat occeacatei voluptate
+velite esse. dicta veritaties dolor quood et vel
+dira leno para dest</b>                    
+</section>        
+ <section class="ad">
+<b class="hw">03</b>
+<b class="mm1">ad ad velti qui</b>
+<b class="mm2">molestiae officiis omnis illo asperiories.
+aut dloribus vitae sunt debitis quo vel
+nam quirs</b>
+             </div>
+                    </section>
+            
+                </div>   
+            
+            
+            
+            
+
+
+
+
+    </pre>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="SPECIALS">
+        <pre><div>
+        <div class="a1">
+         <b class="wh"> MENU___________        </b>
+
+        <b class="hw">Check Our Tasty Menu </b>
+            </div>
+<div><center>     <ol id="list1">
+                     <li class="list2">ALL</li>
+                    <li class="list2">STARTERS</li>
+                    <li class="list2">SALADS</li>
+                    <li class="list2">SPECALITY</li>
+</ol></center>
+</div>
+
+<div id="yamuna">
+<section class="yamun">
+ <div class="yammu1">
+    <section>
+        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/lobster-bisque.jpg" height="70px" width="70px" class="imm">
+    </section>
+    <section>
+        <b class="ya"> Lobster Bisque_________________$5.95 </b>
+        <b class="yaa">Lorem, deren, trataro, filede, nerada</b>
+
+    </section>
+ </div>  
+  <div class="yammu1">
+    <section>
+        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/cake.jpg" height="70px" width="70px" class="imm">
+    </section>
+    <section>
+        <b class="ya">  Crab Cake__________________$7.95</b>
+        <b class="yaa">
+        A delicate crab cake served on a toasted roll 
+        with lettuce and tartar sauce </b>
+
+    </section>
+ </div>   
+ <div class="yammu1">
+    <section>
+        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/tuscan-grilled.jpg" height="70px" width="70px" class="imm">
+    </section>
+    <section>
+        <b class="ya">Tuscan Grilled_________________$9.95</b>
+        <b class="yaa">Grilled chicken with provolone, artichoke 
+        hearts, and roasted red pesto</b>
+
+    </section>
+ </div>   
+ <div class="yammu1">
+    <section>
+        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/greek-salad.jpg" height="70px" width="70px" class="imm">
+    </section>
+    <section>
+        <b class="ya">  Greek Salad$9.95 </b>
+            <b class="yaa">Fresh spinach, crisp romaine, tomatoes, and Greek olives</b>
+
+
+    </section>
+ </div>   
+ <div class="yammu1">
+    <section>
+        <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/lobster-roll.jpg" height="70px" width="70px" class="imm">
+    </section>
+    <section>
+        <b class="ya"> Lobster Roll_______________$12.95</b>
+        <b class="yaa">  Plump lobster meat, mayo and crisp 
+            lettuce on a toasted bulky rol </b>
+
+    </section>
+ </div>     
+</section>
+<section class="yamu">
+    <div class="yammu1">
+        <section>
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/bread-barrel.jpg" height="70px" width="70px" class="imm">
+        </section>
+        <section>
+            <b class="ya">   Bread Barrel_______________$6.95</b>
+                <b class="yaa"> Lorem, deren, trataro, filede, nerada
+                </b>
+        </section>
+     </div>  
+     <div class="yammu1">
+        <section>
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/caesar.jpg" height="70px" width="70px" class="imm">
+        </section>
+        <section>
+            <b class="ya">   Caesar Selections____________$8.95 </b>
+                <b class="yaa"> Lorem, deren, trataro, filede, nerad
+                </b>
+        </section>
+     </div>  
+     <div class="yammu1">
+        <section>
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/mozzarella.jpg" height="70px" width="70px" class="imm">
+        </section>
+        <section>
+            <b class="ya">   Mozzarella Stick_______________$4.95 </b>
+                <b class="yaa">  Lorem, deren, trataro, filede, nerada
+                </b>          
+    
+        </section>
+     </div>  
+     <div class="yammu1">
+        <section>
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/spinach-salad.jpg" height="70px" width="70px" class="imm">
+        </section>
+        <section>
+           <b class="ya"> Spinach Salad_______________$9.95 </b>
+ <b class="yaa">         Fresh spinach with mushrooms,
+            hard boiled egg, and warm bacon vinaigrette
+</b>
+        </section>
+     </div>  
+   
+                 
+</section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+    </div>
+    </div>
+    <div id="EVENTS">
+        <pre>
+
+        <p><b class="splh"> SPECIALS--------</b>
+            <b class="spl">Check Our Specials</b></p> 
+     </pre>
+        <div id="splm">
+            <section id="spl1">
+                <pre>
+<b class="spl1111"> Modi sit est  </b><br>
+<b class="spl111">Unde praesentium sed </b> <br>
+<b class="spl111">Pariatur explicabo vel </b><br>
+<b class="spl111">Nostrum qui quasi </b><br>
+<b class="spl111">Iusto ut expedita aut </b> <br>
+         </section> </pre>
+                <section id="spl2">
+                    <h1 class="spl22"> </h1>
+                    <p class="spl23"> Qui laudantium consequatur laborum sit qui ad sapiente
+                        dila parde sonata raqer a videna mareta paulona marka </p>
+                    <p class="spl233"> Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint.
+                        Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est
+                        repellat minima eveniet eius et quis magni nihil. Consequatur dolorem
+                        quaerat quos qui similique accusamus nostrum rem vero </p>
+
+                </section>
+
+                <section id="spl33">
+                    <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/specials-1.png" alt=""
+                        height="200px" width="200px">
+                </section>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </pre>
+    </div>
+    <div id="CHEFS">
+        <pre>
+            <div class="simply">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <p><b class="splh"> EVENTS--------</b>
+                        <b class="spl">Organize Your Events in our Restaurant</b></p>
+                    
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div id="firstpage">
+                            <div class="firstpageinfo">
+                        <img class="d-block w-100" src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/event-birthday.jpg" alt="First slide"style="height: 450px;width:550px;">
+                      </div>
+                      <div class="firstinfo">
+        <b class="text">BIRTHDAY</b><br>
+        <b class="firstsecond">
+Restaurantly is a modern restaurant <br>
+Bootstrap website template. It's elegantly <br>
+designed in dark mode. Prefect for restaurants,<br>
+bakery, cafe, Bar, catering service, food business,<br>
+personal chef portfolio website and any other food related websites</b>
+                      </div>
+                    </div>
+                    </div>
+<div class="carousel-item">
+<div id="firstpage">
+ <div class="firstpageinfo">
+<img class="d-block w-100" src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/event-private.jpg" alt="Second slide" style="height: 450px;width:550px;">
+</div>
+<div class="firstinfo">
+<b class="text">PRIVATE PARTIES</b><br>
+<b class="firstsecond">
+Restaurantly is a modern restaurant <br>
+Bootstrap website template. It's elegantly <br>
+designed in dark mode. Prefect for restaurants,<br>
+bakery, cafe, Bar, catering service, food business,<br>
+personal chef portfolio website and any other food related websites</b>
+ </div>
+  </div>
+</div>
+                      <div class="carousel-item">
+                        <div id="firstpage">
+                            <div class="firstpageinfo">
+                        <img class="d-block w-100" src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/event-custom.jpg" alt="Third slide" style="height: 450px;width:550px;">
+                      </div>               
+                       <div class="firstinfo">
+                        <b class="text">CUSTOM PARTIES</b><br>
+                        <b class="firstsecond">
+Restaurantly is a modern restaurant <br>
+Bootstrap website template. It's elegantly <br>
+designed in dark mode. Prefect for restaurants,<br>
+bakery, cafe, Bar, catering service, food business,<br>
+personal chef portfolio website and any other food related websites</b>
+</div>
+</div>
+</div>            
+</div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+        
+
+
+    </pre>
+    </div>
+    <div id="GALLERY">
+        <pre>
+    <pre>
+
+        <p><b class="splh"> RESERVATION--------</b>
+            <b class="spl">BOOK A TABLE</b></p> 
+     </pre>
+        <div id="gala">
+            <div>
+                <input type="text" id="gaa" placeholder="Your name">
+                <input type="text" id="gaa" placeholder="Date">
+            </div>
+            <div>
+                <input type="text" id="gaa" placeholder="Your email">
+                <input type="text" id="gaa" placeholder="time">
+            </div>
+            <div>
+                <input type="text" id="gaa" placeholder="Your phone">
+                <input type="text" id="gaa" placeholder="# of people">
+            </div>
+        </div>
+
+        <input type="text" id="gaa1" placeholder="Message">
+
+        <center>
+            <input type="button" value="BOOK A TABLE" class="ga1">
+        </center>
+
+
+
+
+        </pre>
+    </div>
+    <div id="DROPDOWN">
+        <pre>
+        <pre>
+    
+            <p><b class="splh"> TESTIMONALS--------</b>
+                <b class="spl">What they're saying about us</b></p> 
+         </pre>
+<pre>
+<div class="drop">
+<section class="drop1">
+<p>
+    Restaurantly is a modern restaurant <br>
+    Bootstrap website template.  <br>
+    designed in dark mode. <br>
+    bakery, cafe, Bar<br>
+    <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/testimonials/testimonials-5.jpg" alt="" class="dropimg">
+</p>
+</section>
+<section class="drop2">
+    <p>
+    Restaurantly is a modern restaurant <br>
+    Bootstrap website template.  <br>
+    designed in dark mode. <br>
+    bakery, cafe, Bar<br>
+    <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/testimonials/testimonials-2.jpg" alt="" class="dropimg">
+    </p>
+    
+</section>
+<section class="drop3">
+    <p>
+    Restaurantly is a modern restaurant <br>
+    Bootstrap website template.  <br>
+    designed in dark mode. <br>
+    bakery, cafe, Bar<br>
+    <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/testimonials/testimonials-4.jpg" alt="" class="dropimg">
+    </p>
+</section>
+</div>
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </pre>
+    </div>
+    <div id="CONTACT">
+        <pre>
+        <pre>
+    
+            <p><b class="splh"> GALLERY--------</b>
+                <b class="spl">Some photos from Our Restaurant</b></p> 
+         </pre>
+        <div id="contac">
+            <div id="conta">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-1.jpg"
+                    height="200px" width="310px" class="con1">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-2.jpg"
+                    height="200px" width="310px" class="con1">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-3.jpg"
+                    height="200px" width="310px" class="con1">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-4.jpg"
+                    height="200px" width="310px" class="con1">
+            </div>
+            <div id="coo">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-5.jpg"
+                    height="200px" width="310px" class="con1">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-6.jpg"
+                    height="200px" width="310px" class="con1">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-7.jpg"
+                    height="200px" width="310px" class="con1">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-8.jpg"
+                    height="200px" width="310px" class="con1">
+            </div>
+
+        </div>
+
+
+
+
+
+        </pre>
+    </div>
+    <div id="BOOKATABLE">
+        <pre>
+        <pre>
+    
+            <p><b class="splh"> CHEFS--------</b>
+                <b class="spl">Our Proffesional Chefs
+                </b></p>  </pre>
+        <div id="book">
+            <section class="book1">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-1.jpg"
+                    height="350px" width="300px" class="bk">
+                <p class="bkk"> WALTER WHITE
+             Master chef
+                </p>
+            </section>
+            <section class="book2">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-2.jpg"
+                    height="350px" width="300px" class="bk1">
+                <p class="bk11"> SARAH JOHNSHON
+                Master chef
+                </p>
+            </section>
+            <section class="book3">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-3.jpg"
+                    height="350px" width="300px" class="bk2">
+                <p class="bk22"> WILLAM WONDERSON
+                Master chef
+                </p>
+            </section>
+        </div>
+
+
+
+
+
+        </pre>
+    </div>
+    <div id="CONTACT">
+        <pre>
+        <pre> <p><b class="splh"> Contact us--------</b>
+                <b class="spl">  Connect us        </b></p>  </pre>
+            </pre>
+        <div id="maincon1">
+            <div id="maincon">
+        <div id="con1">
+            <!-- <div>
+                <img src="rc.jpg" alt="" class="conimg">
+            </div> -->
+            <div>
+                <p class="con2">LOCATION:</p>
+                <p class="con3">
+                    A108 Adam Street, New York, NY 535022
+                </p>
+            </div>
+
+        </div>
+        <div id="con1">
+            <!-- <div>
+                <img src="rc.jpg" alt="" class="conimg">
+            </div> -->
+            <div>
+                <p class="con2">OPEN HOURS:</p>
+                <p class="con3">
+                    Monday-Saturday:
+                    11:00 AM - 2300 PM
+                </p>
+            </div>
+        </div>
+        <div id="con1">
+            <!-- <div>
+                <img src="rc.jpg" alt="" class="conimg">
+            </div> -->
+            <div>
+                <p class="con2">EMAIL:</p>
+                <p class="con3">
+                    info@example.com
+                </p>
+            </div>
+
+        </div>
+        <div id="con1">
+            <!-- <div>
+                <img src="rc.jpg" alt="" class="conimg">
+            </div> -->
+            <div>
+                <p class="con2">CALL:</p>
+                <p class="con3">
+                    +1 5589 55488 55s
+                </p>
+            </div>
+        </div>
+        </div>
+<div id="gala1">
+<div>
+<input type="text" id="gaa" placeholder="Your name">
+<input type="text" id="gaa" placeholder="Date">
+                    </div>
+                    <div>
+<input type="text" id="gaa" placeholder="Your email">
+<input type="text" id="gaa" placeholder="time">
+</div>
+<div>
+<input type="text" id="gaa" placeholder="Your phone">
+<input type="text" id="gaa" placeholder="# of people">
+</div>
+</div>  
+</div>
+<input type="text" id="gaa1" placeholder="Message">
+<center>
+    <input type="button" value="SEND A MESSAGE" class="ga1">
+</center>
+        </div>
+        </pre>
+    </div>
+    </div>
+</body>
+
+</html>
